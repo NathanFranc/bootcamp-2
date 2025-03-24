@@ -1,15 +1,17 @@
 # #### Inteiros (`int`)
 
+import math
+
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
-primeiro = int(input("inserir numero inteiro: "))
-segundo = int(input("inserir outro numero inteiro: "))
+#primeiro = int(input("inserir numero inteiro: "))
+#segundo = int(input("inserir outro numero inteiro: "))
 
-resultado = primeiro + segundo 
+#resultado = primeiro + segundo 
 
-print(resultado)
+#print(resultado)
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
-numero1 = int(input("inserir numero inteiro: "))
+#numero1 = int(input("inserir numero inteiro: "))
 
 
 
@@ -17,10 +19,10 @@ numero1 = int(input("inserir numero inteiro: "))
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-numero_01 = int(input("inserir um numero inteiro: "))
-numero_02 = int(input("inserir outro numero inteiro: "))
-resultado = numero_01 // numero_02 
-print(resultado)
+#numero_01 = int(input("inserir um numero inteiro: "))
+#numero_02 = int(input("inserir outro numero inteiro: "))
+#resultado = numero_01 // numero_02 
+#print(resultado)
  
  
  
@@ -33,6 +35,11 @@ print(resultado)
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+raio_do_circulo = float(input("digite o raio: "))
+area_do_circulo = math.pi * raio_do_circulo ** 2
+#print(area_do_circulo)
+print(f"{area_do_circulo: .2f}")
+
 
 # #### Strings (`str`)
 

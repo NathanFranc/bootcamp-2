@@ -97,7 +97,6 @@ frase_sem_espaços = frase.strip
 print(" frase sem espaços extras:", frase_sem_espaços)
 
 
-
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 data_do_usuario = input("Insira uma data no formato dd/mm/aaa: ")
 lista_de_dia_mes_ano = data_do_usuario.split("/")
@@ -106,11 +105,31 @@ print(f"o elemento 2 e o: {lista_de_dia_mes_ano[1]}")
 print(f"o elemento 3 e o: {lista_de_dia_mes_ano[2]}")
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+string1 = input(" digite sua primeira string: ")
+string2 = input(" digite sua segunda string: ")
+
+resultado = string1 + " " + string2
+print("strings conctnação", resultado)
+
 
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
-# 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+
+exprt1 = input("insira a primeira expressão booleana (true/false): ").lower() == 'true'
+exprt2 = input("insira uma segunda expressão booleana (ture/false): ").lower() == 'true'
+
+resultado = exprt1 and exprt2 
+
+print(f"resultado do AND logico: {resultado}")
+
+
+# 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR
+valor1 = input("insira o primeiro valor booleana (true/false): ").lower() == 'true'
+valor2 = input("insira o segundo valor booleana (true/false): ").lower() == 'true'
+
+
+
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.

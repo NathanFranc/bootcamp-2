@@ -19,10 +19,8 @@ print("O resto da divisão por 5 é: ", resto)
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 numer1 = int(input("inserir numero inteiro: "))
 numer2 = int(input("inserir outro numero inteiro: "))
-
-resultad = numer1 * numer2
-
-print(resultad)
+resultado = numer1 * numer2
+print("o resultado da multiplicação é:",resultado)
 
 
 
@@ -35,11 +33,26 @@ print(resultado)
  
  
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+numero = int(input("inserir numero inteiro: "))
+quadrado = numero ** 2
+print("o quadrado é:",quadrado)
+
 
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
+numero1 = float(input("inserir numero flutuante: "))
+numero2 = float(input("inserir segundo numero flutuante: "))
+resultado = numero1 + numero2
+print("resultado:",resultado)
+
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+
+numero = float(input("inserir pimeiro numero flutuante:"))
+numero2 = float(input("inserir segundo numero flutuante: "))
+resultado = (numero + numero2) / 2
+print("resultado da media: ", resultado)
+
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.

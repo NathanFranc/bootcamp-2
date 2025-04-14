@@ -1,7 +1,3 @@
-
-numero = float(input("inserir pimeiro numero flutuante:"))
-numero2 = float(input("inserir segundo numero flutuante: "))
-
-resultado = (numero + numero2) / 2
-
-print("resultado da media: ", resultado)
+frase = input("insira uma frase : ")
+frase_sem_espaços = frase.strip()
+print(" frase sem espaços extras:", frase_sem_espaços)

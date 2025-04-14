@@ -3,26 +3,34 @@
 import math
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
-#primeiro = int(input("inserir numero inteiro: "))
-#segundo = int(input("inserir outro numero inteiro: "))
+primeiro = int(input("inserir numero inteiro: "))
+segundo = int(input("inserir outro numero inteiro: "))
 
-#resultado = primeiro + segundo 
+resultado = primeiro + segundo 
 
-#print(resultado)
+print(resultado)
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
-#numero1 = int(input("inserir numero inteiro: "))
-
-
-
+numero1 = int(input("inserir numero inteiro: "))
+resto = numero1 % 5
+print("O resto da divisão por 5 é: ", resto)
 
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+numer1 = int(input("inserir numero inteiro: "))
+numer2 = int(input("inserir outro numero inteiro: "))
+
+resultad = numer1 * numer2
+
+print(resultad)
+
+
+
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-#numero_01 = int(input("inserir um numero inteiro: "))
-#numero_02 = int(input("inserir outro numero inteiro: "))
-#resultado = numero_01 // numero_02 
-#print(resultado)
+numero_01 = int(input("inserir um numero inteiro: "))
+numero_02 = int(input("inserir outro numero inteiro: "))
+resultado = numero_01 // numero_02 
+print(resultado)
  
  
  
@@ -44,6 +52,7 @@ import math
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.

@@ -1,6 +1,22 @@
-valor1 = input("insira o primeiro valor booleana (true/false): ").lower() == 'true'
-valor2 = input("insira o segundo valor booleana (true/false): ").lower() == 'true'
+try:  
+    num1 = float(input("Digite o primeiro número: "))  
+    operador = input("Digite a operação (+ - * /): ")  
+    num2 = float(input("Digite o segundo número: "))  
 
-resultado = valor1 or valor2 
+    # Realiza a operação  
+    match operador:  
+        case "+":  
+            resultado = num1 + num2  
+        case "-":  
+            resultado = num1 - num2  
+        case "*":  
+            resultado = num1 * num2  
+        case "/":  
+            resultado = num1 / num2 if num2 != 0 else "Erro: divisão por zero"  
+        case _:  
+            resultado = "Operação inválida"  
 
-print(f"resultado do OR logico: {resultado}")
+    print(f"Resultado: {resultado}")  
+
+except ValueError:  
+    print("Erro: Digite apenas números válidos!")

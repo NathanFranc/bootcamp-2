@@ -128,16 +128,67 @@ print(f"resultado do AND logico: {resultado}")
 valor1 = input("insira o primeiro valor booleana (true/false): ").lower() == 'true'
 valor2 = input("insira o segundo valor booleana (true/false): ").lower() == 'true'
 
+resultado = valor1 or valor2 
+
+print(f"resultado do OR logico: {resultado}")
 
 
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+
+entrada = input("insira o primeiro valor booleana (true/false): ").lower()
+
+valor_booleano = entrada == 'true'
+valor_invertido = not valor_booleano
+
+print(f"valor original: {valor_booleano}")
+print(f"valor invertido: {valor_invertido}")
+
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+
+n1 = int(input("digite o primeiro numero: "))
+n2 = int(input("digite o segundo numero: "))
+
+print(f"\n{n1} == {n2}? {n1 == n2}")
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+
+
+n1 = int(input("digite o primeiro numero: "))
+n2 = int(input("digite o segundo numero: "))
+
+print(f"\n{n1} != {n2}? {n1 != n2}")
+
+
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+temperatura = float(input("Digite a temperatura: "))  
+escala = input("Converter para (C/F): ").upper()  # Converte para maiúsculo  
+
+if escala == "C":  
+       convertida = (temperatura - 32) * 5/9  
+       print(f"{temperatura}°F → {convertida:.1f}°C")  # :.1f arredonda para 1 decimal  
+elif escala == "F":  
+       convertida = (temperatura * 9/5) + 32  
+       print(f"{temperatura}°C → {convertida:.1f}°F")  
+else:  
+       print("Escala inválida. Use 'C' ou 'F'.")
+
+
+
 # 22: Verificador de Palíndromo
+
+texto = input("Digite uma palavra/frase: ").lower()  # Converte para minúsculas
+texto_limpo = texto.replace(" ", "").replace(",", "").replace(".", "")  # Remove espaços e pontuações
+
+if texto_limpo == texto_limpo[::-1]:  # Compara com a versão invertida
+    print("✅ É um palíndromo!")
+else:
+    print("❌ Não é um palíndromo.")
+
+
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
